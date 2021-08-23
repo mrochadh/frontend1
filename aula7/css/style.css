@@ -1,0 +1,29 @@
+h1 {
+  background-color: rgb(122, 85, 85);
+}
+
+h1 {
+  background-color: crimson;
+}
+
+p {
+  color:blueviolet;
+}
+
+.job-title {
+  background-color: blue;
+}
+
+#high {
+  color: rgb(50, 255, 180)
+}
+
+h2 {
+  color: red;
+  background-color: aqua;
+}
+
+#foot {
+  color: blueviolet;
+  background-color: yellow;
+}
