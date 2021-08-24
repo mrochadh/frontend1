@@ -1,29 +1,32 @@
-h1 {
-  background-color: rgb(122, 85, 85);
+body {
+  color: red;
 }
 
-h1 {
-  background-color: crimson;
+body {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-  color:blueviolet;
+header {
+  color: yellowgreen;
 }
 
 .job-title {
-  background-color: blue;
-}
-
-#high {
-  color: rgb(50, 255, 180)
-}
-
-h2 {
-  color: red;
   background-color: aqua;
 }
 
-#foot {
-  color: blueviolet;
-  background-color: yellow;
+p {
+  background-color: brown;
+}
+
+#high {
+  background-color: coral;
+}
+
+footer {
+  background-color: darkcyan;
+}
+
+a {
+  background-color: blueviolet;
 }
