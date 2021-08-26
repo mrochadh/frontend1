@@ -1,21 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+/* background color, image, position, size, repeat, attachment */
 
 body {
-  background-color: darkgrey;
+  background-color: rgb(47, 41, 41);
   font-family: 'Roboto', sans-serif;
 }
 
-/* background color, image, position, size, repeat, attachment */
 .media-picture {
-  height: 700px;
   background-image: url(https://images.unsplash.com/photo-1585230458757-fa6f6e3760e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  opacity: 0.5;
-}
-
-#titulo {
-  opacity: 1;
+  height: 400px;
+  background-size: cover;
 }
