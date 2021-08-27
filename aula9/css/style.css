@@ -1,4 +1,12 @@
-#primeirotitulo, h1 {
-  background-color: green;
+h1 {
+  background-color: aqua;
+  color: white;
+  padding: 40px;
+}
+
+#titulo {
+  background-color: aqua;
   color: white;
 }
+
+
