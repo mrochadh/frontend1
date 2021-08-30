@@ -1,0 +1,18 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 100px 30px 100px 30px;
+  border: 10px red double;
+  height: 500px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 30px 60px 90px 120px;
+}
+
+h1, h2 {
+  background-color: aqua;
+  padding: 20px 30px;
+  border-radius: 40px;
+  text-align: center;
+}
+
