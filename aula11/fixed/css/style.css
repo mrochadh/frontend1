@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  padding: 40px;
+  border: black 5px solid;
+  background-color: coral;
+  font-size: 70px;
+  text-align: center;
+}
+
+#mae {
+  border: 10px coral solid;
+  padding: 30px;
+  height: 1000px;
+}
+
+/* como o absolute, posicionado em relação à janela
+mas o elemento não gira com o scroll*/
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+

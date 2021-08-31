@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  padding: 40px;
+  border: black 5px solid;
+  background-color: coral;
+  font-size: 70px;
+  text-align: center;
+}
+
+#mae {
+  border: 10px coral solid;
+  padding: 30px;
+}
+
+/* em relação ao próprio elemento */
+.relative {
+  position: relative;
+  top: 250px;
+  left: 400px;
+}
+
+

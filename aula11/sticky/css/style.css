@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+h1 {
+  text-align: center;
+  height: 200px;
+}
+
+/* começa na sua posição inicial e fica fixo ao atingir o posicionamento definido */
+nav {
+  height: 100px;
+  border: black 5px solid;
+  position: sticky;
+  top: 10px;
+  background-color: coral;
+  padding: 30px;
+}
+
