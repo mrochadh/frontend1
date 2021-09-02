@@ -1,0 +1,34 @@
+fieldset {
+ margin: 5%;
+ border: 2px violet solid;
+ border-radius: 20px;
+ padding: 20px;
+ position: relative;
+}
+
+legend {
+  background-color: rgb(255, 255, 255);
+  color: blueviolet;
+  font-size: 30px;
+  padding: 10px;
+  position: absolute; /* reposiciona a tag em relação ao body OU ao ancestral posicionado mais próximo */
+  top: -30px;
+}
+
+h1, div {
+  margin: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  border: 0;
+  border-radius: 30px;
+}
+
+#buttons {
+  text-align: center;
+}

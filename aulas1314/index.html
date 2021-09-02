@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formulários</title>
+</head>
+<body>
+
+    <form action="/usuario/cadastro" method="GET" id="usrcad">
+      <fieldset form="usrcad">
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="nome">Nome: *</label>
+          <input type="text" name="nome" id="nome" required placeholder="Insira seu nome aqui">
+        </div>
+        
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Insira seu email">
+        </div>
+
+        <div>
+          <label for="pwd">Senha:</label>
+          <input type="password" name="pwd" id="pwd">
+        </div>
+  
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade">
+        </div>
+  
+        <div>
+          <label for="comentario">Deixe o seu comentário:</label>
+          <textarea name="comentario" id="comentario" maxlength="10">Conteúdo</textarea>
+        </div>
+  
+        <div>
+          <label for="carro">Escolha seu modelo preferido:</label>
+          <select name="carro" id="carro">
+              <optgroup label="Ferrari">
+                <option value="458spider">458 Spider</option>
+                <option value="f12berlinetta">F12 Berlinetta</option>
+                <option value="california">California T</option>
+              </optgroup>
+              <optgroup label="Porshe">
+                <option value="macan">Macan</option>
+                <option value="918spyder">918 Spyder</option>
+              </optgroup>
+          </select>
+        </div>
+
+        <div>
+          <label for="data">Data de nascimento:</label>
+          <input type="date" name="data" value="2021-07-22" min="2018-01-01" max="2022-12-31">
+        </div>
+
+        <div>
+          <p>Hobbies:</p>
+          <input type="checkbox" name="hobbies" value="Música" id="hobmus"> <label for="hobmus">Música</label>
+          <input type="checkbox" name="hobbies" value="Pintura" id="hobpin"> <label for="hobpin">Pintura</label>
+          <input type="checkbox" name="hobbies" value="Jogar" id="hobjog"> <label for="hobjog">Jogar</label>
+        </div>
+      </fieldset>
+
+      <fieldset form="usrcad">
+        <legend>Dados de pagamento</legend>
+
+        <div>
+          <p>Forma de pagamento padrão:</p>
+          <input type="radio" name="meiopag" value="Pix" id="meiopagpix" checked> <label for="meiopagpix">Pix</label>
+          <input type="radio" name="meiopag" value="Crédito" id="meiopagcred"> <label for="meiopagcred">Crédito</label>
+          <input type="radio" name="meiopag" value="Boleto" id="meiopagbol"><label for="meiopagbol">Boleto</label>
+        </div>
+      </fieldset>
+      <div id="buttons">
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
