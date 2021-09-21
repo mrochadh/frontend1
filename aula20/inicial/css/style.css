@@ -11,42 +11,37 @@
 /*grid container*/
 body {
   color: #A0ACAD;
-  display: grid;
-  grid-template-columns: 200px 1fr 200px; /* 1a coluna com largura 200px, 2a coluna com largura 1 fração do espaço disponível, 3a coluna com largura 200px*/
-  grid-template-areas: 
-    'header header header'
-    'links main aside'
-    'footer footer footer';
+
 }
 
 header {
   background-color: #33032f;
   padding: 10px;
-  height: 15vh; /*15% da altura da viewport (a área visível do navegador)*/
-  grid-area: header;
+  height: 15vh; /* 15% da altura da viewport (a área visível do navegador)*/
+  
 
 }
+
+aside {
+  background-color: #531253;
+  padding: 10px;
+  
+ }
 
 main {
   background-color: #A0ACAD;
   color: #33032f;
   padding: 10px;
   height: 75vh;
-  grid-area: main;
-}
-
-aside {
- background-color: #531253;
- padding: 10px;
- grid-area: aside;
+  
 }
 
 div {
   padding: 10px;
-  grid-area: links;
+  
 }
 
-.rodape {
+footer {
   background-color: #33032F;
   padding: 10px;
   height: 10vh;
@@ -63,8 +58,8 @@ div {
 
 /**
 DESAFIOS:
-- acrescentar uma barra de navegação em uma nova linha: alterar o grid-template-areas
-- trocar a aside e os related links de lado: alterar o grid-template-areas
+- acrescentar uma barra de navegação em uma nova linha
+- trocar a aside e os related links de lado
 - estender a barra asside do topo até o final da tela
 - centralizar o conteúdo do header e do footer tanto horizontal quanto verticalmente
 - transformar o main em um container para a nossa galeria de cards bacanas
