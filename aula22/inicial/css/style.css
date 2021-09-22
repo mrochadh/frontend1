@@ -28,7 +28,11 @@ main {
   background-color: #A0ACAD;
   color: #33032f;
   padding: 10px;
-  flex: 1; /* abreviação grow */
+  
+}
+
+img {
+  width: 70%;
 }
 
 div {
@@ -46,4 +50,16 @@ footer {
   justify-content: center;
 }
 
-/* estilos a serem aplicados para telas com no mínimo 401px*/
+/* estilos a serem aplicados para telas maiores*/
+
+@media (min-width: 769px) and (orientation: portrait) {
+
+
+
+}
+
+
+@media only screen and (min-width: 1281px) {
+
+
+}
