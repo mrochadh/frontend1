@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+html {
+  font-size: 1rem;
+}
+
+/*medida relativa que vai usar o elemento pai como referência*/
+.container-em {
+  border: 5px solid coral;
+  margin: 20px 0;
+  width: 600px;
+  font-size: 2em;
+}
+
+.item-em {
+  margin-top: 20px;
+  border: 5px solid crimson;
+  width: 70%;
+  font-size: 2em;
+}
+
+/*medida relativa que vai usar o elemento raiz (html) como referência*/
+.container-rem {
+  border: 5px solid coral;
+  margin: 20px 0;
+  width: 600px;
+  font-size: 1.5rem;
+  padding: 30px;
+}
+
+.item-rem {
+  margin-top: 20px;
+  border: 5px solid crimson;
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  padding: 1rem;
+}
