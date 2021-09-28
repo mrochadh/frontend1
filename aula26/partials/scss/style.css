@@ -1,0 +1,50 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,600,900");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #3646a1;
+}
+
+h3 {
+  border: 2px solid #3646a1;
+}
+
+.message, .info, .alert {
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+}
+
+.info {
+  border-color: rgba(92, 104, 170, 0.986);
+}
+
+.alert {
+  border-color: #f86109;
+}
+
+.success {
+  height: 100px;
+  width: 700px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(0, 128, 0, 0.5);
+  border: 3px solid green;
+  border-radius: 1rem;
+}
+
+header {
+  height: 10vh;
+  background-color: #3646a1;
+}
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

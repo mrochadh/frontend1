@@ -1,0 +1,94 @@
+// variaveis
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600,900');
+
+// variáveis globais
+$primary-color: rgb(85, 38, 197);
+$info-color: rgb(122, 38, 218);
+$alert-color: rgb(230, 103, 29);
+$success-color: green;
+
+$sans-serif: 'Open Sans', sans-serif;
+
+body {
+  font-family: $sans-serif;
+}
+
+// nesting
+header {
+  height: 15vh;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+  }
+}
+
+
+h2 {
+  color: $primary-color;
+}
+
+h3 {
+  border: 3px solid $primary-color;
+  padding: 0.7rem;
+
+}
+
+// extends 
+
+// classe mãe (a ser extendida) - propriedades comuns a serem herdadas pelas classes "filhas"
+%message-box {
+  height: 300px;
+  width: 300px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+}
+
+.info {
+  @extend %message-box;
+  border-color: $info-color;
+  color: $info-color
+}
+
+.alert {
+  @extend %message-box;
+  border-color: $alert-color;
+  color: $info-color;
+}
+
+
+
+// mixin
+
+@mixin box($height: 400px, $width: 400px) {
+  height: $height;
+  width: $width;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+@mixin box-color($color) {
+  background-color: rgba($color, 0.5);
+  border-color: $color;
+  color: $color;
+}
+
+.success {
+  @include box(100px, 600px);
+  @include box-color($success-color);
+}
+
+.alert-sm {
+  @include box();
+  @include box-color($alert-color);
+}
+
+

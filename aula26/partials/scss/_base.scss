@@ -1,0 +1,52 @@
+// variáveis, tipografia, mixin
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600,900');
+
+$primary-color: rgb(54, 70, 161);
+$info-color: rgba(92, 104, 170, 0.986);
+$alert-color: rgb(248, 97, 9);
+$success-color: green;
+
+$sans-serif: 'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: $primary-color;
+}
+
+h3 {
+  border: 2px solid $primary-color;
+}
+
+// extend
+
+%message-shared {
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+}
+
+
+// mixin
+
+
+@mixin theme($theme-color: grey) {
+  background-color: rgba($theme-color, 0.5);
+  border: 3px solid $theme-color;
+  border-radius: 1rem;
+}
+
+@mixin box($width: 700px, $height: 100px) {
+  height: $height;
+  width: $width;
+  padding: 1rem;
+  margin: 1rem 0;
+} 

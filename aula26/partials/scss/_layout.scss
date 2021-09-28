@@ -1,0 +1,12 @@
+// cabeçalho, navegação, containers, grids, footer
+
+@use 'base';
+
+header {
+  height: 10vh;
+  background-color: base.$primary-color;
+  h1 {
+    font-family: base.$sans-serif;
+    color: white;
+  }
+}

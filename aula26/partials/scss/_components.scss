@@ -1,0 +1,22 @@
+// componentes reutilizáveis
+
+@use 'base';
+
+.message {
+  @extend %message-shared;
+}
+
+.info {
+  @extend %message-shared;
+  border-color: base.$info-color;
+}
+
+.alert {
+  @extend %message-shared;
+  border-color: base.$alert-color;
+}
+
+.success {
+  @include base.box();
+  @include base.theme(green);
+}
